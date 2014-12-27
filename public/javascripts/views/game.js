@@ -14,6 +14,14 @@ Simon.Views.Game = function(options) {
       this.guess.push(this.clickedColor($(e.target)))
       this.checkAnswer()
     }.bind(this))
+
+    this.$el.find('.outer-ring div:not(.inner-ring)').on('mousedown', function(e) {
+      $(e.target).addClass('active')
+    })
+
+    this.$el.find('.outer-ring div:not(.inner-ring)').on('mouseup', function(e) {
+      $(e.target).removeClass('active')
+    })
   }
 
   this.addColor = function() {

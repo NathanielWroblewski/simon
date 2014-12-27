@@ -38,6 +38,10 @@ h1 { margin: 50px 0 25px 0; }
   left: 125px;
 }
 
+.inner-ring h2 {
+  line-height: 125px;
+}
+
 .quarter-circle-top-left{
   width: 190px;
   height: 190px;

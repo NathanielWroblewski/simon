@@ -2,17 +2,15 @@ $(document).ready(function() {
   var game = new Simon.Views.Game({el: '#simon'})
   game.setListeners()
 
-  setTimeout(function() {
-    $('.inner-ring').html('<h2>3</h2>')
-  }, 1000)
+  $('.inner-ring').html('<h2>3</h2>')
 
   setTimeout(function() {
     $('.inner-ring').html('<h2>2</h2>')
-  }, 2000)
+  }, 1000)
 
   setTimeout(function() {
     $('.inner-ring').html('<h2>1</h2>')
-  }, 3000)
+  }, 2000)
 
   setTimeout(function() {
     $('.inner-ring').html('')
@@ -20,5 +18,5 @@ $(document).ready(function() {
     setTimeout(function() {
       game.addColor()
     }, 175)
-  }, 4000)
+  }, 3000)
 })

@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  window.game = new Simon.Views.Game({el: '#simon'})
-  window.game.setListeners()
+  var game = new Simon.Views.Game({el: '#simon'})
+  game.setListeners()
 
   setTimeout(function() {
     $('.inner-ring').html('<h2>3</h2>')
@@ -16,9 +16,9 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $('.inner-ring').html('')
-    window.game.addColor()
+    game.addColor()
     setTimeout(function() {
-      window.game.addColor()
+      game.addColor()
     }, 175)
   }, 4000)
 })
